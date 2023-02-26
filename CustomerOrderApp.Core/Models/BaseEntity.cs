@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomerOrderApp.Core
+namespace CustomerOrderApp.Core.Models
 {
     public abstract class BaseEntity
     {

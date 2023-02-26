@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomerOrderApp.Core
+namespace CustomerOrderApp.Core.Models
 {
     public class Customer : BaseEntity
     {
-        public string Name { get; set; }
-
-        public string Address { get; set; }
+        public string cust_name { get; set; }
+        public string cust_address { get; set; }
     }
 }
