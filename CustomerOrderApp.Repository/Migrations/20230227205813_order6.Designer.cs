@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CustomerOrderApp.Repository.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230225224001_Orderss")]
-    partial class Orderss
+    [Migration("20230227205813_order6")]
+    partial class order6
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -79,6 +79,9 @@ namespace CustomerOrderApp.Repository.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("cust_ord_quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("cust_order_no")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

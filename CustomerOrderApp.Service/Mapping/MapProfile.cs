@@ -10,8 +10,10 @@ namespace CustomerOrderApp.Service.Mapping
         {
             CreateMap<CustomerOrder, CustomerOrderInsertDto>().ReverseMap();
             CreateMap<CustomerOrderInsertDto, CustomerOrder>().ReverseMap();
-            CreateMap<CustomerOrder, CustomerOrderUpdateDto>().ReverseMap();
-            CreateMap<CustomerOrderUpdateDto, CustomerOrder>().ReverseMap();
+            CreateMap<CustomerOrder, CustomerOrderAddressUpdateDto>().ReverseMap();
+            CreateMap<CustomerOrderAddressUpdateDto, CustomerOrder>().ReverseMap();
+            CreateMap<CustomerOrder, CustomerOrderQuantityUpdateDto>().ReverseMap();
+            CreateMap<CustomerOrderQuantityUpdateDto, CustomerOrder>().ReverseMap();
         }
     }
 }

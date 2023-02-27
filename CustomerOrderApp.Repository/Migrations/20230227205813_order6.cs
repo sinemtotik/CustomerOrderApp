@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CustomerOrderApp.Repository.Migrations
 {
-    public partial class Orderss : Migration
+    public partial class order6 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -48,6 +48,7 @@ namespace CustomerOrderApp.Repository.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CustomerId = table.Column<int>(type: "int", nullable: false),
+                    cust_order_no = table.Column<int>(type: "int", nullable: false),
                     cust_ord_address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     cust_ord_barcode = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     cust_ord_description = table.Column<string>(type: "nvarchar(max)", nullable: true),

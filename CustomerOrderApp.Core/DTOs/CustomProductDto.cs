@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CustomerOrderApp.Core.DTOs
 {
-    public class CustomerOrderQuantityUpdateDto
+    public class CustomProductDto
     {
-        public int cust_ord_cust_id { get; set; }
-        public string cust_ord_order_no { get; set; }
         public string cust_ord_barcode { get; set; }
+        public string cust_ord_description { get; set; }
         public int cust_ord_quantity { get; set; }
+        public decimal cust_ord_price { get; set; }
     }
 }

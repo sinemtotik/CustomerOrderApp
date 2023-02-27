@@ -8,7 +8,8 @@ namespace CustomerOrderApp.Core.DTOs
 {
     public class CustomerOrderAddressUpdateDto
     {
-        public int cust_ord_order_id { get; set; }
+        public int cust_ord_cust_id { get; set; }
+        public string cust_ord_order_no { get; set; }
         public string cust_ord_address { get; set; }
     }
 }

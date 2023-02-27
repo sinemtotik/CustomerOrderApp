@@ -10,6 +10,7 @@ namespace CustomerOrderApp.Core.Models
     {
         public int CustomerId { get; set; }
         public Customer Customer { get; set; }
+        public string cust_order_no { get; set; }
         public string cust_ord_address { get; set; }
         public string cust_ord_barcode { get; set; }
         public string cust_ord_description { get; set; }
