@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CustomerOrderApp.Repository.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230227205813_order6")]
-    partial class order6
+    [Migration("20230227225254_customer_orders")]
+    partial class customer_orders
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -81,8 +81,8 @@ namespace CustomerOrderApp.Repository.Migrations
                     b.Property<int>("cust_ord_quantity")
                         .HasColumnType("int");
 
-                    b.Property<int>("cust_order_no")
-                        .HasColumnType("int");
+                    b.Property<string>("cust_order_no")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

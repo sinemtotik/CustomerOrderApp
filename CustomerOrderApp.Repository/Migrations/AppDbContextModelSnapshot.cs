@@ -79,8 +79,8 @@ namespace CustomerOrderApp.Repository.Migrations
                     b.Property<int>("cust_ord_quantity")
                         .HasColumnType("int");
 
-                    b.Property<int>("cust_order_no")
-                        .HasColumnType("int");
+                    b.Property<string>("cust_order_no")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
